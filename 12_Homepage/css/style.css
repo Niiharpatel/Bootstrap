@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Mono&display=swap');
+
+/* ======== common css ======== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+/* ======== navbar ======= */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 111;
+    background-color: yellow;
+}
+
+header .navbar-nav {
+    justify-content: end !important;
+    width: 100%;
+}
+
+
+.header-fix {
+    position: fixed;
+    width: 100%;
+    z-index: 111;
+    background-color: rgba(255, 255, 0, 0.452);
+    backdrop-filter: blur(10px);
+}
+
+
+
+/* ======== home page ======== */
+.homepage .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.homepage .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+
+}
+
+.homepage .slider-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner1.jpg);
+    height: 580px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage .slider-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner2.jpg);
+    height: 580px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage .slider-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner3.jpg);
+    height: 580px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage .slider-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner4.jpg);
+    height: 580px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage .swiper-scrollbar {
+    opacity: 1 !important;
+    background-color: rgba(128, 128, 128, 0);
+    /* height: 0.1px !important; */
+    margin-bottom: 50px;
+}
+
+.homepage .swiper-scrollbar-drag {
+    background-color: rgba(255, 255, 255, 0.342);
+    height: 4px !important;
+    width: 100px;
+}
+
+.slider-name {
+    padding-top: 90px;
+}
+
+.slider-name .row {
+    color: rgba(255, 255, 255, 0.623) !important;
+}
+
+
+
+/* ============ grid page ================== */
+
+.grid-page .overlay {
+    position: relative;
+    cursor: pointer;
+}
+
+.grid-page .overlay .img-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 128, 0, 0.514);
+    place-content: center;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s ease all;
+}
+
+.grid-page .overlay:hover .img-text {
+    height: 100%;
+}
+
+.grid-page .overlay .inner-text {
+    transition: 1s all ease;
+    transform: scaleY(0);
+}
+
+.grid-page .overlay:hover .inner-text {
+    height: 50%;
+    transform: scaleY(1);
+
+}
+
+.bottom-text a:hover {
+    color: green !important;
+}
+
+
+
+/* =========== About Section =============== */
+
+.about-page {
+    background-color: rgba(144, 238, 144, 0.438);
+}
+
+.about-flex {
+    display: flex;
+    padding-top: 10px;
+}
+
+.about-flex .list-group-item {
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+
+}
+
+
+.about-flex .list-group-item.active {
+    border-bottom: 4px solid green;
+    color: green !important;
+}
+
+.tab-content .link a {
+    border-bottom: 4px solid green;
+    width: 90px;
+    padding-bottom: 7px;
+    font-weight: 700;
+}
+
+.tab-content .link a:hover {
+    color: green !important;
+}
+
+
+
+/* ============ Ask your self section =============== */
+
+.ask h5 {
+    color: green;
+    font-weight: 700;
+}
+
+
+.ask .outer {
+    padding: 10px;
+}
+
+.ask .outer .icon {
+    height: 80px;
+    width: 80px;
+    border: 3px solid green;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: auto;
+    color: green;
+}
+
+.ask h4 a:hover {
+    color: green !important;
+}
+
+.ask .outer:hover .icon {
+    color: white;
+    background-color: green;
+}
+
+
+/* ========== request form section */
+
+.req-form {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.req-form .req-form-main {
+    background-color: white;
+    padding: 60px;
+}
+
+.req-form h5 {
+    color: rgb(53, 49, 49);
+}
+
+.req-form .user-i {
+    height: 45px;
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 40px;
+    box-shadow: none;
+}
+
+.req-form .user-i:focus-visible {
+    border: 2px solid green !important;
+}
+
+.req-form button {
+    border-radius: 40px
+}
+
+.req-form button:hover {
+    background-color: rgb(49, 46, 46);
+}
+
+
+/* =========== BLOG POST SECTION ============== */
+
+.post .blog-title {
+    color: rgb(12, 126, 12);
+}
+
+.blog-main span {
+    color: rgb(6, 85, 6);
+}
+
+.blog-main .user-txt {
+    color: rgb(51, 50, 50);
+    font-weight: 600;
+}
+
+
+
+/* ================ STATS SECTION ================= */
+
+.stats {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.stats h1 {
+    font-size: 50px;
+}
+
+.stats .text-r {
+    background-color: rgb(188, 240, 188);
+    padding: 75px 0px;
+}
+
+.stats .count .icon span {
+    font-size: 30px;
+    color: rgb(5, 53, 5);
+}
+
+.stats .text-r h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.stats .text-r p {
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+
+
+
+/* =============== PLAN PRICING SECTION ==================== */
+
+.plan .title {
+    color: rgb(5, 53, 5);
+    font-weight: 700;
+}
+
+.plan .plan-flex-box {
+    display: flex;
+}
+
+.plan .plan-flex-box .main-box {
+    border: 2px solid rgba(128, 128, 128, 0.356);
+    padding: 75px 60px;
+}
+
+.plan .main-box .plan-title {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.plan .main-box .plan-title.active {
+    background-color: rgb(3, 80, 3);
+    color: white;
+}
+
+.plan .main-box .plan-title .title-name {
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.plan .plan-amt sup {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.plan .plan-amt sub {
+    font-size: 15px;
+    color: gray;
+}
+
+.plan .plan-amt h1 {
+    font-size: 50px;
+}
+
+
+.plan .plan-flex-box .main-box ul {
+    line-height: 32px;
+}
+
+.plan .plan-flex-box .main-box span {
+    padding-right: 10px;
+    color: rgb(5, 53, 5);
+    font-weight: bolder;
+}
+
+.plan .plan-flex-box .main-box .plan-btn {
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: rgb(27, 25, 25);
+    color: white;
+}
+
+.plan .plan-flex-box .box-scale {
+    scale: 1.1;
+    background-color: white;
+
+}
+
+
+.main-box .top-h {
+    font-weight: bolder;
+    color: rgba(167, 163, 163, 0.651);
+    top: 10px;
+    position: absolute;
+    text-align: center;
+    width: 62%;
+}
+
+
+.plan .plan-flex-box .main-box:hover .plan-btn {
+    background-color: rgb(9, 105, 9);
+}
+
+
+
+/* ============ REVIEW SECTION ============== */
+
+.review {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.review .container .row h5 {
+    color: rgb(13, 165, 13) !important;
+    font-weight: bold;
+}
+
+.review .container .review-btn {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.review .list-group-item {
+    background-color: white;
+    border: none;
+    position: relative;
+}
+
+.review .list-group-item .customer-details::after {
+    content: '';
+    width: 95%;
+    height: 4px;
+    background-color: rgba(114, 119, 114, 0.623);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+/* --------- for right boxright-0 after effect ----------*/
+.review .list-group-item .after-effect::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: rgba(97, 100, 97, 0.623);
+    position: absolute;
+    top: 0;
+}
+
+
+.review .list-group-item.active .customer-details::after {
+    background-color: rgb(4, 65, 4);
+}
+
+.review .container .review-btn .hover-effect:hover ::after {
+    background-color: rgb(8, 97, 8) !important;
+    transition: 0.5s all ease;
+}
+
+
+/* ============== CONTACT US SECTION */
+
+.contact_us .phn_no {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact_us .phn_no .num {
+    font-size: 23px;
+}
+
+.contact_us .phn_no .option {
+    font-weight: 700;
+    color: green;
+}
+
+.contact_us .phn_no .quote button {
+    background-color: green;
+    color: white;
+    border-radius: 0px;
+}
+
+.contact_us .phn_no .quote button:hover {
+    background-color: rgb(39, 37, 37);
+}
+
+
+.contact_us .row {
+    display: flex;
+    align-items: center !important;
+}
+
+
+/* =============== FOOTER ================= */
+
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+footer .titl {
+    color: rgb(16, 92, 16) !important;
+}
+
+footer .input-group input {
+    height: 45px;
+}
+
+footer .input-group input:focus {
+    box-shadow: none;
+}
+
+footer .fa-angle-double-right {
+    font-size: 10px;
+    color: green;
+}
+
+footer .servic a {
+    color: white !important;
+}
+
+footer .servic a:hover {
+    color: gainsboro !important;
+}
+
+footer .servic {
+    line-height: 30px;
+}
+
+footer .news-box {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer .l-side {
+    flex: 0.5;
+}
+
+footer .r-side {
+    flex: 1;
+}
+
+footer .r-side a {
+    color: white !important;
+}
+
+footer .r-side a:hover {
+    color: rgb(175, 170, 170) !important;
+}
+
+footer .r-side p {
+    color: gray;
+}
+
+footer .quick {
+    color: white !important;
+}
+
+footer .quick:hover {
+    color: rgb(175, 170, 170) !important;
+}
+
+footer .quick-h {
+    line-height: 30px;
+}
+
+footer .f-border::after {
+    content: '';
+    height: 1px !important;
+    width: 100%;
+    background-color: #ffffff48;
+    display: block;
+    margin-top: 15px;
+}
+
+/* ========== footer bottom =========== */
+footer .list-inline a {
+    color: white !important;
+
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    gap: 20px;
+
+}
+
+footer .icons a {
+    color: white !important;
+}
+
+footer .icons a:hover {
+    color: green !important;
+}
+
+footer .name {
+    color: white !important;
+}
+
+footer .name:hover {
+    color: green !important;
+}
+
+
+
+
+
+/* ====================== MEDIA QUERY ======================= */
+
+/* media query */
+@media (max-width:576px) {
+
+    .stats h1 {
+        font-size: 30px;
+    }
+
+    .stats {
+        background-position: unset;
+        background-size: 100%;
+    }
+
+
+    .plan .plan-flex-box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .plan .plan-flex-box .box-scale {
+        scale: 1;
+        background-color: white;
+
+    }
+
+    .main-box .top-h {
+        width: 76%;
+    }
+
+    .contact_us .phn_no {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    /* ----- client review section ------- */
+
+    .review .container .review-btn .client-re {
+        flex-direction: column;
+    }
+
+    .review .container .list-group .tab-pane .content {
+        font-size: 17px !important;
+        width: 100% !important;
+
+    }
+
+    .review .container .review-btn .client-re .img-media {
+        display: grid;
+        justify-content: center;
+    }
+
+
+    .review .container .review-btn .client-re .customer-details {
+        text-align: center;
+
+    }
+
+    .review .container .review-btn .client-re .customer-details h4 {
+        font-size: 18px;
+    }
+
+    /* ------ footer section */
+
+    footer .icons {
+        display: flex;
+        justify-content: start;
+
+    }
+
+
+}
+
+
+@media (min-width:576px) {
+
+    .stats h1 {
+        font-size: 50px;
+    }
+
+    .stats {
+        background-position: unset;
+        background-size: 100%;
+    }
+
+    .plan .plan-flex-box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .plan .plan-flex-box .box-scale {
+        scale: 1;
+        background-color: white;
+
+    }
+
+    .main-box .top-h {
+        width: 76%;
+    }
+
+    /* ----- client review section ------- */
+
+    .review .container .review-btn .client-re {
+        flex-direction: column;
+    }
+
+    .review .container .list-group .tab-pane .content {
+        font-size: 17px !important;
+        width: 100% !important;
+
+    }
+
+    .review .container .review-btn .client-re .img-media {
+        display: grid;
+        justify-content: center;
+    }
+
+
+    .review .container .review-btn .client-re .customer-details {
+        text-align: center;
+    }
+
+    .review .container .review-btn .client-re .customer-details h4 {
+        font-size: 18px;
+    }
+
+    .contact_us .phn_no {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* --- footer section ------ */
+    footer .icons {
+        display: flex;
+        justify-content: start;
+
+    }
+
+
+
+}
+
+
+@media (min-width:768px) {
+    .grid-page img {
+        width: 100%;
+    }
+
+    .stats {
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .plan .plan-flex-box {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .plan .plan-flex-box .box-scale {
+        scale: 1.1;
+        background-color: white;
+
+    }
+
+    .main-box .top-h {
+        width: 49%;
+    }
+
+    /* ----- client review section ------- */
+
+    .review .container .review-btn .client-re {
+        flex-direction: column;
+    }
+
+    .review .container .list-group .tab-pane .content {
+        font-size: 20px !important;
+        width: 100% !important;
+
+    }
+
+    .review .container .review-btn .client-re .img-media {
+        display: grid;
+        justify-content: center;
+    }
+
+
+    .review .container .review-btn .client-re .customer-details {
+        text-align: center;
+    }
+
+    .review .container .review-btn .client-re .customer-details h4 {
+        font-size: 25px;
+    }
+
+    .contact_us .phn_no {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* ---- footer section ------- */
+    footer .icons {
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:992px) {
+    .main-box .top-h {
+        width: 60%;
+    }
+
+
+
+    /* ----- client review section ------- */
+
+    .review .container .review-btn .client-re {
+        flex-direction: row;
+    }
+
+    .review .container .list-group .tab-pane .content {
+        font-size: 20px !important;
+        width: 60% !important;
+
+    }
+
+    .review .container .review-btn .client-re .img-media {
+        display: grid;
+        justify-content: center;
+    }
+
+
+    .review .container .review-btn .client-re .customer-details {
+        text-align: center;
+    }
+
+    .contact_us .phn_no {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .main-box .top-h {
+        width: 62%;
+    }
+}
